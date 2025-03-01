@@ -150,6 +150,17 @@ $(document).ready(function () {
     });
 });
 
+var modalElement1 = document.getElementById('exampleModal1');
+var videoContainer1 = document.querySelector('.video-container1');
+var videoIframe1 = document.getElementById('videomodal1');
+
+modalElement1.addEventListener('hidden.bs.modal', function () {
+    videoIframe1.remove();
+        setTimeout(function() {
+            videoContainer1.innerHTML = '<iframe id="videomodal1" width="100%" height="393.75" src="https://www.youtube.com/embed/4O5T99lNzpg?si=ATDTCE4bTkaMnQDI" title="Realitas Semu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }, 500);
+    }
+);
 /*------------------------------------- Testimonial Slider -------------------------------------*/
 $(document).ready(function () {
     $('.testimonial').slick({
