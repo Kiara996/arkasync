@@ -161,6 +161,30 @@ modalElement1.addEventListener('hidden.bs.modal', function () {
         }, 500);
     }
 );
+
+var modalElement2 = document.getElementById('exampleModal2');
+var videoContainer2 = document.querySelector('.video-container2');
+var videoIframe2 = document.getElementById('videomodal2');
+
+modalElement2.addEventListener('hidden.bs.modal', function () {
+    videoIframe2.remove();
+        setTimeout(function() {
+            videoContainer2.innerHTML = '<iframe width="100%" height="393.75" src="https://www.youtube.com/embed/GGA4S0P0F2Q?si=-m_zH3i2RBI7bCAO" title="Realitas Semu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }, 500);
+    }
+);
+
+var modalElement3 = document.getElementById('exampleModal3');
+var videoContainer3 = document.querySelector('.video-container3');
+var videoIframe3 = document.getElementById('videomodal3');
+
+modalElement3.addEventListener('hidden.bs.modal', function () {
+    videoIframe3.remove();
+        setTimeout(function() {
+            videoContainer3.innerHTML = '<iframe id="videomodal3" width="100%" height="393.75" src="https://www.youtube.com/embed/z5T41YWFlbQ?si=b72w2yOO60aJnmZL" title="Up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }, 500);
+    }
+);
 /*------------------------------------- Testimonial Slider -------------------------------------*/
 $(document).ready(function () {
     $('.testimonial').slick({
