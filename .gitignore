@@ -1,0 +1,6 @@
+    *.log
+
+    build/
+
+    .vscode/
+    git config --global user.name Kiara
