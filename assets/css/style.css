@@ -847,6 +847,12 @@ body.dark-mode .hireMe-svg-side {
 .gallery-item-each {
     max-width: 47%;
 }
+@media screen and (max-width: 767px) {
+    .gallery-item-each {
+        max-width: 100%;
+    }
+}
+
 .gallery-item3 {
     margin-top: -60px;
 }
