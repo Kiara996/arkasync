@@ -1,2 +1,1 @@
-    *.log
-  git config --global user.name Kiara
+git config --global user.name Kiara
