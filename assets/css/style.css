@@ -1,9 +1,3 @@
-/*------------------------------------------------------------------
-  Project: Resume
-  Author: The_Krishna
-  Last change: 13/12/2024
-  Primary use:
------------------------------------------------------------------- */
 /*-----------------------[Table of contents]------------------------
 1.Default CSS
 2.Light Mode Colors CSS
@@ -929,6 +923,7 @@ body.dark-mode .hireMe-svg-side {
     line-height: 24px;
 }
 .ipsum {
+    text-align: justify;
     color: var(--3, #838485);
     font-size: 18px;
     font-weight: 400;
