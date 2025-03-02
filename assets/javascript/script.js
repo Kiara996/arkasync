@@ -198,38 +198,14 @@ modalElement4.addEventListener('hidden.bs.modal', function () {
     }
 );
 
-var modalElement5 = document.getElementById('exampleModal5');
-var videoContainer5 = document.querySelector('.video-container5');
-var videoIframe5 = document.getElementById('videomodal5');
+var modalElement8 = document.getElementById('exampleModal8');
+var videoContainer8 = document.querySelector('.video-container8');
+var videoIframe8 = document.getElementById('videomodal8');
 
-modalElement5.addEventListener('hidden.bs.modal', function () {
-    videoIframe5.remove();
+modalElement8.addEventListener('hidden.bs.modal', function () {
+    videoIframe8.remove();
         setTimeout(function() {
-            videoContainer5.innerHTML = '<iframe id="videomodal5" width="100%" height="500" src="https://jasminesmada.com" title="Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement6 = document.getElementById('exampleModal6');
-var videoContainer6 = document.querySelector('.video-container6');
-var videoIframe6 = document.getElementById('videomodal6');
-
-modalElement6.addEventListener('hidden.bs.modal', function () {
-    videoIframe6.remove();
-        setTimeout(function() {
-            videoContainer6.innerHTML = '<iframe id="videomodal6" width="100%" height="500" src="https://redjasminesmada.my.id" title="Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement7 = document.getElementById('exampleModal7');
-var videoContainer7 = document.querySelector('.video-container7');
-var videoIframe7 = document.getElementById('videomodal7');
-
-modalElement7.addEventListener('hidden.bs.modal', function () {
-    videoIframe7.remove();
-        setTimeout(function() {
-            videoContainer7.innerHTML = '<iframe id="videomodal7" width="100%" height="500" src="https://jasminesmada-news.blogspot.com/" title="Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+            videoContainer8.innerHTML = '<iframe id="videomodal8" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
         }, 500);
     }
 );

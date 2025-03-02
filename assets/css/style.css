@@ -876,6 +876,9 @@ body.dark-mode .hireMe-svg-side {
 .modal {
     --bs-modal-width: 700px;
 }
+.modal-body .website-container img {
+    max-width: 100%;
+}
 .plumbing-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
