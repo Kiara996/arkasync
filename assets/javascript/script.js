@@ -209,6 +209,30 @@ modalElement8.addEventListener('hidden.bs.modal', function () {
         }, 500);
     }
 );
+
+var modalElement9 = document.getElementById('exampleModal9');
+var videoContainer9 = document.querySelector('.video-container9');
+var videoIframe9 = document.getElementById('videomodal9');
+
+modalElement9.addEventListener('hidden.bs.modal', function () {
+    videoIframe9.remove();
+        setTimeout(function() {
+            videoContainer9.innerHTML = '<iframe id="videomodal8" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }, 500);
+    }
+);
+
+var modalElement11 = document.getElementById('exampleModal11');
+var videoContainer11 = document.querySelector('.video-container11');
+var videoIframe11 = document.getElementById('videomodal11');
+
+modalElement11.addEventListener('hidden.bs.modal', function () {
+    videoIframe11.remove();
+        setTimeout(function() {
+            videoContainer11.innerHTML = '<iframe id="videomodal8" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        }, 500);
+    }
+);
 /*------------------------------------- Testimonial Slider -------------------------------------*/
 $(document).ready(function () {
     $('.testimonial').slick({
