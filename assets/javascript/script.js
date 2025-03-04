@@ -150,89 +150,28 @@ $(document).ready(function () {
     });
 });
 
-var modalElement1 = document.getElementById('exampleModal1');
-var videoContainer1 = document.querySelector('.video-container1');
-var videoIframe1 = document.getElementById('videomodal1');
+const modalElements = [
+    { id: 'exampleModal1', containerClass: '.video-container1', iframeId: 'videomodal1', src: 'https://www.youtube.com/embed/4O5T99lNzpg?si=ATDTCE4bTkaMnQDI' },
+    { id: 'exampleModal2', containerClass: '.video-container2', iframeId: 'videomodal2', src: 'https://www.youtube.com/embed/GGA4S0P0F2Q?si=-m_zH3i2RBI7bCAO' },
+    { id: 'exampleModal3', containerClass: '.video-container3', iframeId: 'videomodal3', src: 'https://www.youtube.com/embed/z5T41YWFlbQ?si=b72w2yOO60aJnmZL' },
+    { id: 'exampleModal4', containerClass: '.video-container4', iframeId: 'videomodal4', src: 'https://www.youtube.com/embed/BcmKOYfvPEI?si=tQVNZ8NdtJ_CC9dw' },
+    { id: 'exampleModal8', containerClass: '.video-container8', iframeId: 'videomodal8', src: 'https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1' },
+    { id: 'exampleModal9', containerClass: '.video-container9', iframeId: 'videomodal9', src: 'https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1' },
+    { id: 'exampleModal11', containerClass: '.video-container11', iframeId: 'videomodal11', src: 'https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1' }
+];
 
-modalElement1.addEventListener('hidden.bs.modal', function () {
-    videoIframe1.remove();
-        setTimeout(function() {
-            videoContainer1.innerHTML = '<iframe id="videomodal1" width="100%" height="393.75" src="https://www.youtube.com/embed/4O5T99lNzpg?si=ATDTCE4bTkaMnQDI" title="Realitas Semu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+modalElements.forEach(({ id, containerClass, iframeId, src }) => {
+    const modalElement = document.getElementById(id);
+    const videoContainer = document.querySelector(containerClass);
+    const videoIframe = document.getElementById(iframeId);
+
+    modalElement.addEventListener('hidden.bs.modal', function () {
+        videoContainer.removeChild(videoIframe);
+        setTimeout(function () {
+            videoContainer.innerHTML = `<iframe id="${iframeId}" width="100%" height="393.75" src="${src}" title="Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
         }, 500);
-    }
-);
-
-var modalElement2 = document.getElementById('exampleModal2');
-var videoContainer2 = document.querySelector('.video-container2');
-var videoIframe2 = document.getElementById('videomodal2');
-
-modalElement2.addEventListener('hidden.bs.modal', function () {
-    videoIframe2.remove();
-        setTimeout(function() {
-            videoContainer2.innerHTML = '<iframe width="100%" height="393.75" src="https://www.youtube.com/embed/GGA4S0P0F2Q?si=-m_zH3i2RBI7bCAO" title="Realitas Semu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement3 = document.getElementById('exampleModal3');
-var videoContainer3 = document.querySelector('.video-container3');
-var videoIframe3 = document.getElementById('videomodal3');
-
-modalElement3.addEventListener('hidden.bs.modal', function () {
-    videoIframe3.remove();
-        setTimeout(function() {
-            videoContainer3.innerHTML = '<iframe id="videomodal3" width="100%" height="393.75" src="https://www.youtube.com/embed/z5T41YWFlbQ?si=b72w2yOO60aJnmZL" title="Up" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement4 = document.getElementById('exampleModal4');
-var videoContainer4 = document.querySelector('.video-container4');
-var videoIframe4 = document.getElementById('videomodal4');
-
-modalElement4.addEventListener('hidden.bs.modal', function () {
-    videoIframe4.remove();
-        setTimeout(function() {
-            videoContainer4.innerHTML = '<iframe id="videomodal4" width="100%" height="393.75" src="https://www.youtube.com/embed/BcmKOYfvPEI?si=tQVNZ8NdtJ_CC9dw" title="Switch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement8 = document.getElementById('exampleModal8');
-var videoContainer8 = document.querySelector('.video-container8');
-var videoIframe8 = document.getElementById('videomodal8');
-
-modalElement8.addEventListener('hidden.bs.modal', function () {
-    videoIframe8.remove();
-        setTimeout(function() {
-            videoContainer8.innerHTML = '<iframe id="videomodal8" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement9 = document.getElementById('exampleModal9');
-var videoContainer9 = document.querySelector('.video-container9');
-var videoIframe9 = document.getElementById('videomodal9');
-
-modalElement9.addEventListener('hidden.bs.modal', function () {
-    videoIframe9.remove();
-        setTimeout(function() {
-            videoContainer9.innerHTML = '<iframe id="videomodal8" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
-
-var modalElement11 = document.getElementById('exampleModal11');
-var videoContainer11 = document.querySelector('.video-container11');
-var videoIframe11 = document.getElementById('videomodal11');
-
-modalElement11.addEventListener('hidden.bs.modal', function () {
-    videoIframe11.remove();
-        setTimeout(function() {
-            videoContainer11.innerHTML = '<iframe id="videomodal11" width="100%" height="393.75" src="https://www.youtube.com/embed/alTr5LkC1Ec?si=_AaAA58d4f_CR2S1" title="Gala Untuk Ibu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
-        }, 500);
-    }
-);
+    });
+});
 /*------------------------------------- Testimonial Slider -------------------------------------*/
 $(document).ready(function () {
     $('.testimonial').slick({
