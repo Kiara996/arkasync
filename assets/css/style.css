@@ -1149,7 +1149,7 @@ ul.slick-dots button {
     align-items: center;
     justify-content: center;
     gap: 15px;
-    max-width: 200px;
+    max-width: 250px;
     width: 100%;
     height: 80px;
     transition: background-color 0.3s ease; /* Smooth transition */
