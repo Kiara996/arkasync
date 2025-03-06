@@ -300,6 +300,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
+    .top-skill-sub-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
     .coding-skill-section {
         padding: 40px 0;
     }
@@ -399,6 +403,9 @@
         gap: 15px;
         margin: 20px 0 30px;
     }
+    .gallery-item-each {
+        max-width: 100%;
+    }
     .gallery-item {
         width: auto;
         margin-bottom: 0;
@@ -434,6 +441,11 @@
         font-weight: 500;
     }
     .design-skill-sub-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+    .top-skill-sub-section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
@@ -603,6 +615,9 @@
         justify-items: center;
     }
     .design-skill-sub-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .top-skill-sub-section {
         grid-template-columns: repeat(1, 1fr);
     }
 }
