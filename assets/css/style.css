@@ -1152,9 +1152,12 @@ ul.slick-dots button {
     max-width: 250px;
     width: 100%;
     height: 80px;
-    transition: background-color 0.3s ease; /* Smooth transition */
+    background-color:#838485; /* Smooth transition */
+    transition: background-color 0.3 ease ;
 }
-.top-design-skills-img-main:hover,
+.top-design-skills-img-main:hover{
+    background-color: rgba(255, 255, 255, 0.829);
+}
 .top-design-skills-img-main:active { /* Hover and click states */
     background-color: rgba(0, 204, 151, 0.50); /* Fill color */
 }
