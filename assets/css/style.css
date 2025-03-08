@@ -1174,6 +1174,10 @@ ul.slick-dots button {
     font-weight: 500;
     line-height: 14px;
 }
+.top-skills-img-main i{
+    font-size: 36px;
+    color: #000;
+}
 .coding-skill-section {
     padding: 30px 0;
 }
