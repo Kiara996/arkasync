@@ -1175,8 +1175,15 @@ ul.slick-dots button {
     line-height: 14px;
 }
 .top-skills-img-main i{
+    color: #ffbb27;
     font-size: 36px;
-    color: #000;
+    transition: ease-in-out 0.3s;
+}
+.top-skills-img-main:hover i{
+    color: var(--main-text)
+}
+.top-skills-img-main i:hover:before{
+    color: #ffbb27;
 }
 .coding-skill-section {
     padding: 30px 0;
