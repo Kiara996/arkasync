@@ -1182,9 +1182,6 @@ ul.slick-dots button {
 .top-skills-img-main:hover i{
     color: var(--main-text)
 }
-.top-skills-img-main i:hover:before{
-    color: #ffbb27;
-}
 .coding-skill-section {
     padding: 30px 0;
 }
