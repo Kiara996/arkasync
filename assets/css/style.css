@@ -1144,7 +1144,7 @@ ul.slick-dots button {
 }
 .top-skills-img-main {
     border-radius: 10px;
-    border: 2px solid var(--8, #00CC97);
+    border: 2px solid var(--8, #ffbb27);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1152,35 +1152,13 @@ ul.slick-dots button {
     max-width: 250px;
     width: 100%;
     height: 80px;
-    background-color:#838485; /* Smooth transition */
-    transition: background-color 0.3 ease ;
+    background: linear-gradient(to bottom, transparent 50%, rgb(255, 187, 39) 50%);
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.3s ease-in-out;
 }
-.top-design-skills-img-main:hover{
-    background-color: rgba(255, 255, 255, 0.829);
-}
-.top-design-skills-img-main:active { /* Hover and click states */
-    background-color: rgba(0, 204, 151, 0.50); /* Fill color */
-}
-.photoshop {
-    border: 2px solid #31A8FF;
-    background: rgba(49, 168, 255, 0.10);
-}
-.photoshop-text p:nth-of-type(2) {
-    color: var(--1, #31A8FF) !important;
-}
-.adobe-xd {
-    border: 2px solid #FF61F6;
-    background: rgba(255, 97, 246, 0.10);
-}
-.adobe-xd-text p:nth-of-type(2) {
-    color: var(--1, #FF61F6) !important;
-}
-.sketch {
-    border: 2px solid #FFDB59;
-    background: rgba(255, 219, 89, 0.10);
-}
-.sketch-text p:nth-of-type(2) {
-    color: var(--1, #FFDB59) !important;
+.top-skills-img-main:hover {
+    background-position: bottom;
 }
 .top-skill-counter-main p:first-of-type {
     color: var(--main-text);
@@ -1198,48 +1176,6 @@ ul.slick-dots button {
 }
 .coding-skill-section {
     padding: 30px 0;
-}
-#progress {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    margin-top: 30px;
-    gap: 20px;
-}
-.progress-item {
-    display: flex;
-    width: 146px;
-    height: 146px;
-    border-radius: 50%;
-    font-size: 0;
-    animation: .4s ease-out reverse;
-    position: relative;
-}
-.progress-item::after {
-    content: attr(data-value)'%';
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 130px;
-    margin: 8px;
-    border-radius: 50%;
-    background: var(--section-background);
-    color: var(--main-text);
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
-    text-transform: uppercase;
-}
-.skill-label {
-    position: absolute;
-    bottom: -35px;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    color: var(--main-text);
-    text-align: center;
-    width: 100%;
 }
 /*-----------------------[ 14.design-skill-section CSS ]------------------------*/
 .design-skill-sub-section {
