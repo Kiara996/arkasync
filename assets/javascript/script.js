@@ -172,6 +172,14 @@ modalElements.forEach(({ id, containerClass, iframeId, src }) => {
         }, 500);
     });
 });
+
+// Ensure scrolling is enabled when any modal is hidden
+document.querySelectorAll('.modal').forEach(modal => {
+    modal.addEventListener('hidden.bs.modal', function () {
+        document.body.style.overflow = 'auto';
+    });
+});
+
 /*------------------------------------- Testimonial Slider -------------------------------------*/
 $(document).ready(function () {
     $('.testimonial').slick({
